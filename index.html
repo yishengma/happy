@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>HTML5+Canvas漂亮的3D烟花动画生日特效</title>
+<title>生日快乐</title>
 
 <style>
 html,body{
@@ -157,8 +157,8 @@ function splode(x,y,z){
 		case 3:	pow=new Audio(s+"pow4.ogg"); break;
 	}
 	d=Math.sqrt((x-playerX)*(x-playerX)+(y-playerY)*(y-playerY)+(z-playerZ)*(z-playerZ));
-	pow.volume=1.5/(1+d/10);
-	pow.play();
+	// pow.volume=1.5/(1+d/10);
+	// pow.play();
 }
 
 function doLogic(){
