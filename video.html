@@ -3,12 +3,28 @@
 <head>
  <meta charset="UTF-8">
  <title>Happy Birthday</title>
+ <style>
+      .video {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 50 auto;
+            position: absolute;
+            text-align: center;
+        }
+ </style>
  <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css"/>
  <link rel="stylesheet" href="css/bubbles.css" type="text/css" />
 </head>
 
 <body>
-
+    <div class="video" style="position:absolute;z-index:9999">
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <object data="movie.mp4" width="320" height="240">
+            </object> 
+          </video>
+    </div>
   <ul class="bg-bubbles">
       <li></li>
       <li></li>
@@ -24,7 +40,5 @@
 
   </div>
   <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/jquery.fullPage.min.js"></script>
-  <audio src="music/1.mp3" autoplay="autoplay" loop="loop"></audio>
 </body>
 </html>
