@@ -145,8 +145,8 @@ body {
 }
 
 .come {
-	animation-delay:0.4s;
-	animation:coming 2s;
+	animation-delay:20s;
+	animation:coming 20s;
 	opacity:1;
 }
 @keyframes coming{
@@ -220,17 +220,17 @@ body {
 	position:absolute;
 	top:70%;
 	opacity:1;
-	z-index:100;
+	z-index:8888;
 }
 .button-style1 {
 	position:absolute;
 	left:20%;
-	animation:btn1 15s;
+	animation:btn1 28s;
 }
 .button-style2 {
 	position:absolute;
 	left:68%;
-	animation:btn2 15s;
+	animation:btn2 28s;
 }
 @keyframes btn1 {
 	0% {
