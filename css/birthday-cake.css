@@ -35,8 +35,8 @@ body {
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-animation: in 500ms 6s ease-out forwards;
-  animation: in 500ms 6s ease-out forwards;
+  -webkit-animation: in 500ms 23.5s ease-out forwards;
+  animation: in 500ms 23.5s ease-out forwards;
 }
 
 .velas:after,
@@ -68,6 +68,44 @@ body {
   margin-left: -2.2px;
   width: 6.66666667px;
   height: 18px;
+  animation: fuego-style 30s;
+  animation-delay:fuego-style 30s ;
+}
+
+
+@keyframes fuego-style{
+	0% {
+		position:absolute;
+		top:45%;
+		opacity: 0;
+	}
+	70% {
+		position:absolute;
+		top:45%;
+		opacity: 0;
+	}
+	100% {
+		position:absolute;
+		top:49%;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fuego-style{
+	0% {
+		position:absolute;
+		top:45%;
+		opacity: 0;
+	}
+	70% {
+		position:absolute;
+		top:45%;
+		opacity: 0;
+	}
+	100% {
+		position:absolute;
+		top:49%;
+		opacity: 1;
+	}
 }
 
 .fuego:nth-child(1) {
@@ -146,23 +184,41 @@ body {
 
 .come {
 	animation-delay:20s;
-	animation:coming 20s;
+	animation:coming 25s;
 	opacity:1;
 }
 @keyframes coming{
-	from{
-		opacity:0;
+	0% {
+		position:absolute;
+		top:45%;
+		opacity: 0;
 	}
-	to {
-		opacity:1;
+	70% {
+		position:absolute;
+		top:45%;
+		opacity: 0;
+	}
+	100% {
+		position:absolute;
+		top:49%;
+		opacity: 1;
 	}
 }
 @-webkit-keyframes coming{
-	from{
-		opacity:0;
+	0% {
+		position:absolute;
+		top:45%;
+		opacity: 0;
 	}
-	to {
-		opacity:1;
+	70% {
+		position:absolute;
+		top:45%;
+		opacity: 0;
+	}
+	100% {
+		position:absolute;
+		top:49%;
+		opacity: 1;
 	}
 }
 
@@ -173,7 +229,7 @@ body {
 	top:49%;
 	margin-left: -119px;
 	opacity: 1;
-	animation: happybirthdays 10s;
+	animation: happybirthdays 33s;
 	animation-delay: 0s;
 }
 @keyframes happybirthdays {
@@ -220,17 +276,17 @@ body {
 	position:absolute;
 	top:70%;
 	opacity:1;
-	z-index:8888;
+	z-index:9999;
 }
 .button-style1 {
 	position:absolute;
 	left:20%;
-	animation:btn1 28s;
+	animation:btn1 34s;
 }
 .button-style2 {
 	position:absolute;
 	left:68%;
-	animation:btn2 28s;
+	animation:btn2 34s;
 }
 @keyframes btn1 {
 	0% {
