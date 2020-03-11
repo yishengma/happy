@@ -2,7 +2,7 @@ var S = {
   init: function () {
       S.Drawing.init('.canvas');
       document.body.classList.add('body--ready');
-      S.UI.simulate("|#countdown 3|予我渡北川.|Happy Birthday|");
+      S.UI.simulate("|#countdown 3|予我渡北川.|生日快乐呀！|");
       S.Drawing.loop(function () {
           S.Shape.render();
       });
