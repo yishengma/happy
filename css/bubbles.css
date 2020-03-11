@@ -8,6 +8,7 @@
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-color: #ee9ca7;
   z-index: 1;
 }
 .bg-bubbles li {
