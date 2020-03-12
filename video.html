@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
- <meta charset="UTF-8">
- <title>Happy Birthday To 予我渡北川.!</title>
- <style>
 
-	*{
- 	padding:0px;
- 	margin:0px;
-   border:0px;
-   margin-right: -100px;
-	 margin-bottom: -100px;
- }
-      .video {
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            text-align: center;
-            top: 30%;
-        }
- </style>
- <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css"/>
- <link rel="stylesheet" href="css/bubbles.css" type="text/css" />
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+    }
+
+    /*设置样式，定位为相对定位，由于ul——bg-bubbles是绝对定位，所以这样设置可以让container成为ul的父级*/
+    .big-container {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    /*主要编辑的大容器*/
+    .container{
+      padding: 10% 0;
+    }
+
+
+    .video {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css" />
+  <link rel="stylesheet" href="css/bubbles.css" type="text/css" />
 </head>
 
 <body style="height: 100%; width: 100%;">
-    <div class="video" style="position:absolute;z-index:9999;clear:both;display:block;margin:auto">
+  <!--在外面套一层big-container-->
+  <div class="big-container">
+    <!--再套一层container，在这里添加东西-->
+    <div class="container">
+      <div class="video" style="z-index:9999;clear:both;display:block;margin:auto;">
         <video width="720" height="480" controls>
-            <source src="movie.mp4" type="video/mp4">
-            <object data="movie.mp4" width="720" height="480">
-            </object> 
-          </video>
+          <source src="movie.mp4" type="video/mp4">
+          <object data="movie.mp4" width="720" height="480">
+          </object>
+        </video>
+      </div>
     </div>
-  <ul class="bg-bubbles">
+
+    <ul class="bg-bubbles">
       <li></li>
       <li></li>
       <li></li>
@@ -44,8 +61,13 @@
       <li></li>
       <li></li>
     </ul>
+  </div>
 
   </div>
   <script src="js/jquery-2.1.1.min.js"></script>
+  <script>
+    document.getElementsByClassName("big-container")[0].style.height = window.innerHeight + "px";
+    </script>
 </body>
+
 </html>

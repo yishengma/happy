@@ -9,7 +9,7 @@
   height: 100%;
   background-size: cover;
   background-color: #ee9ca7;
-  z-index: 1;
+  z-index: -1;  /*这里要改为-1，置于最底层*/
 }
 .bg-bubbles li {
   position: absolute;
